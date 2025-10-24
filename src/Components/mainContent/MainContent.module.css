@@ -1,0 +1,533 @@
+section {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  transition: color 0.4s ease;
+  text-decoration: none;
+}
+
+.section1 {
+  background: #000000;
+  min-height: 130vh;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  padding-top: 10rem;
+  position: relative;
+}
+.section1 .topTexts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.section1 .topTexts .left {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.section1 .topTexts .left p {
+  font-weight: lighter;
+  border: 2px solid white;
+  padding: 0.3rem 0.9rem;
+  border-radius: 1rem;
+  opacity: 0.8;
+}
+.section1 .topTexts .right p {
+  opacity: 0.8;
+  font-weight: lighter;
+}
+.section1 .names {
+  padding: 3rem 2rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.section1 .names .left,
+.section1 .names .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5.5rem;
+  font-size: 3rem;
+}
+.section1 .names .threeRom {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  font-size: 7.3rem;
+  z-index: 10;
+}
+.section1 .deadpoolPortrait {
+  position: absolute;
+  width: 34rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+}
+.section1 .redCircle {
+  background: rgb(203, 1, 1);
+  position: absolute;
+  width: 33rem;
+  height: 33rem;
+  border-radius: 50%;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.section1 .titleText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  font-size: 30vw;
+  font-weight: lighter;
+}
+.section1 .year {
+  position: absolute;
+  bottom: 45%;
+  right: 3%;
+  rotate: 90deg;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.section1 .marqueTrack {
+  position: absolute;
+  bottom: 26%;
+  left: -2%;
+  background: rgba(255, 255, 255, 0.168627451);
+  width: 200%;
+  height: 2.7rem;
+  rotate: 357deg;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  overflow: hidden;
+  will-change: transform;
+}
+.section1 .marqueTrack .marqueeInner {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.section1 .marqueTrack .eye {
+  width: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.section1 .bottomContainer {
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  height: 7rem;
+  background: linear-gradient(to top, #000000, transparent);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.5rem;
+}
+.section1 .bottomContainer .left {
+  font-family: "Arimo", sans-serif;
+  width: 50%;
+}
+.section1 .bottomContainer .left .header {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  color: #c7c7c7;
+  font-weight: lighter;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.section1 .bottomContainer .left .header .beltLogo {
+  width: 1.3rem;
+  height: 1.3rem;
+  background: rgb(198, 0, 0);
+  border-radius: 50%;
+}
+.section1 .bottomContainer .left .header p {
+  font-size: 1rem;
+}
+.section1 .bottomContainer .left .header p span {
+  letter-spacing: 0.2rem;
+}
+.section1 .bottomContainer .left .desc {
+  font-size: 0.8rem;
+  width: 50%;
+  line-height: 1.5;
+}
+.section1 .bottomContainer .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.section1 .bottomContainer .right .bookBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 2px solid white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.section1 .bottomContainer .right .bookBtn p {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.section1 .bottomContainer .right .bookBtn i {
+  font-size: 1.2rem;
+}
+.section1 .bottomContainer .right .bookBtn:active {
+  transform: scale(0.95);
+}
+.section1 .bottomContainer .right .badge {
+  width: 14.2rem;
+  position: relative;
+}
+.section1 .bottomContainer .right .badge p {
+  position: absolute;
+  font-family: "Bebas Neue", sans-serif;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 0.7rem 1.05rem;
+  font-size: 1.3rem;
+  top: 40%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  rotate: 348deg;
+}
+.section1 .bottomContainer .right .badge img {
+  rotate: 26deg;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section2 {
+  background: #000000;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  border-bottom-left-radius: 3.8rem;
+  border-bottom-right-radius: 3.8rem;
+  box-shadow: 0px 10px 0px rgb(177, 18, 18);
+}
+.section2 .marqueTrack {
+  position: absolute;
+  top: -5%;
+  left: -2%;
+  background: #921524;
+  width: 200%;
+  height: 2.7rem;
+  rotate: 357deg;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  overflow: hidden;
+  will-change: transform;
+}
+.section2 .marqueTrack .marqueeInner {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.section2 .marqueTrack .eye {
+  width: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.section2 .trailerDetails {
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.section2 .trailerDetails .left .header {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 1rem;
+}
+.section2 .trailerDetails .left .header .beltLogo {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgb(198, 0, 0);
+  border-radius: 50%;
+}
+.section2 .trailerDetails .left .header p {
+  font-family: "Arimo", sans-serif;
+  color: #dadada;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.section2 .trailerDetails .left .marvelLogo {
+  width: 13rem;
+}
+.section2 .trailerDetails .middle {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+.section2 .trailerDetails .middle div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 50%;
+}
+.section2 .trailerDetails .middle div p:nth-child(1) {
+  rotate: 22deg;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.section2 .trailerDetails .middle div p:nth-child(2) {
+  font-size: 2.5rem;
+}
+.section2 .trailerDetails .middle .trailerDur {
+  padding: 1.5rem 1.9rem;
+  background: white;
+  color: black;
+}
+.section2 .trailerDetails .middle .rating {
+  padding: 1.5rem 2.9rem;
+  background: rgb(148, 24, 24);
+  color: white;
+}
+.section2 .trailerDetails .middle .releaseDate {
+  padding: 1.5rem 3rem;
+  background: rgb(22, 22, 22);
+  color: white;
+}
+.section2 .trailerDetails .right {
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.section2 .trailerDetails .right .redLine {
+  width: 0.22rem;
+  height: 5rem;
+  background: rgb(152, 25, 25);
+}
+.section2 .trailerDetails .right p {
+  width: 15rem;
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+.section2 .secondRow {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section2 .secondRow .left p {
+  font-family: "Bebas Neue", sans-serif;
+  border: 1.7px solid rgb(185, 185, 185);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50%;
+  rotate: 348deg;
+  font-size: 1.3rem;
+}
+.section2 .secondRow .left .stars i {
+  font-size: 1.3rem;
+}
+.section2 .secondRow .left .stars i:nth-last-child(1) {
+  font-size: 1.4rem;
+}
+.section2 .secondRow .left .stars .redStar {
+  color: red;
+}
+.section2 .secondRow .right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section2 .secondRow .right i {
+  background: gray;
+  padding: 0.7rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.section2 .secondRow .right i:hover {
+  background: linear-gradient(27deg, rgb(182, 199, 204) 0%, rgb(129, 142, 145) 50%, rgb(121, 130, 130) 100%);
+}
+.section2 .thirdRow {
+  padding: 5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.section2 .thirdRow .rightNav,
+.section2 .thirdRow .leftNav {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.section2 .thirdRow .rightNav i,
+.section2 .thirdRow .leftNav i {
+  font-size: 3rem;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+.section2 .thirdRow .rightNav:active,
+.section2 .thirdRow .leftNav:active {
+  transform: scale(0.9);
+}
+.section2 .thirdRow .rightNav i {
+  background: white;
+  color: rgb(160, 37, 37);
+}
+.section2 .thirdRow .leftNav i {
+  background: rgb(163, 25, 25);
+}
+.section2 .thirdRow .cards {
+  width: 70%;
+  height: 12rem;
+}
+.section2 .thirdRow .cards .card {
+  width: 18rem;
+  height: 25rem;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.section2 .thirdRow .cards .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section2 .thirdRow .cards .card:nth-child(1) {
+  rotate: 0deg;
+  background: wheat;
+}
+.section2 .thirdRow .cards .card:nth-child(2) {
+  rotate: 15deg;
+  background: rgb(245, 179, 179);
+}
+.section2 .thirdRow .cards .card:nth-child(3) {
+  rotate: -15deg;
+  background: rgb(175, 181, 1);
+}
+.section2 .thirdRow .cards .card:nth-child(4) {
+  rotate: -5deg;
+  background: rgb(186, 245, 179);
+}
+
+.section3 {
+  background: #ffffff;
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+.section3 .tops {
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .tops .header {
+  font-family: "Arimo", sans-serif;
+  width: 50%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: #1a1a1a;
+  font-weight: lighter;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+.section3 .tops .header .beltLogo {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgb(198, 0, 0);
+  border-radius: 50%;
+}
+.section3 .tops .header p {
+  font-size: 1rem;
+}
+.section3 .tops .header p span {
+  letter-spacing: 0.2rem;
+}
+.section3 .tops .desc {
+  font-size: 0.9rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+  width: 35rem;
+  line-height: 1.5;
+}
+.section3 .BolderTexts {
+  padding: 0 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  gap: 3.8rem;
+}
+.section3 .BolderTexts .firstText {
+  margin-top: -5rem;
+  font-size: 13vw;
+  font-weight: 500;
+}
+.section3 .BolderTexts .secondText {
+  font-size: 7vw;
+  font-weight: lighter;
+  margin-top: 2rem;
+}
+.section3 .BolderTexts .thirdText {
+  font-size: 11rem;
+  font-weight: 500;
+}
+.section3 .gallery {
+  padding: 0 2rem;
+  margin-top: -4.1rem;
+  font-family: "Arimo", sans-serif;
+}
+.section3 .numberTexts {
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.7rem;
+  margin-top: 1rem;
+}
+.section3 .numberTexts .numbers {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 18rem;
+}
+.section3 .middleTexts {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+}/*# sourceMappingURL=MainContent.module.css.map */
