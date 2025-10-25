@@ -246,7 +246,7 @@ a {
 
   .marqueTrack {
     position: absolute;
-    top: -5%;
+    top: -5.5%;
     left: -2%;
     background: #921524;
     width: 200%;
@@ -530,15 +530,14 @@ a {
           letter-spacing: 0.2rem;
         }
       }
-      
     }
     .desc {
-        font-size: 0.9rem;
-        font-family: "Arimo", sans-serif;
-        font-weight: 600;
-        width: 35rem;
-        line-height: 1.5;
-      }
+      font-size: 0.9rem;
+      font-family: "Arimo", sans-serif;
+      font-weight: 600;
+      width: 35rem;
+      line-height: 1.5;
+    }
   }
 
   .BolderTexts {
@@ -550,18 +549,18 @@ a {
     // justify-content: space-between;
 
     .firstText {
-        margin-top: -5rem;
-        font-size: 13vw;
-        font-weight: 500;
+      margin-top: -5rem;
+      font-size: 13vw;
+      font-weight: 500;
     }
     .secondText {
-        font-size: 7vw;
-        font-weight: lighter;
-        margin-top: 2rem;
+      font-size: 7vw;
+      font-weight: lighter;
+      margin-top: 2rem;
     }
     .thirdText {
-        font-size: 11rem;
-        font-weight: 500;
+      font-size: 11rem;
+      font-weight: 500;
     }
   }
 
@@ -580,10 +579,10 @@ a {
     margin-top: 1rem;
 
     .numbers {
-        font-size: 1.3rem;
-        display: flex;
-        flex-direction: row;
-        gap: 18rem;
+      font-size: 1.3rem;
+      display: flex;
+      flex-direction: row;
+      gap: 18rem;
     }
   }
 
@@ -591,5 +590,278 @@ a {
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
+  }
+
+  .indexingRow {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .castsImg {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      .cast {
+        width: 3rem;
+        height: 3rem;
+        background: red;
+        border-radius: 50%;
+        overflow: hidden;
+        filter: drop-shadow(0px 1px 2px rgb(30, 30, 30));
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .arrows {
+      img {
+        width: 7rem;
+      }
+    }
+
+    .badge {
+      width: 14.2rem;
+      position: relative;
+
+      p {
+        position: absolute;
+        font-family: "Bebas Neue", sans-serif;
+        border: 2px solid rgb(25, 25, 25);
+        border-radius: 50%;
+        padding: 0.7rem 1.05rem;
+        font-size: 1.3rem;
+        top: 40%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+        rotate: 348deg;
+      }
+
+      img {
+        rotate: 26deg;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.section4 {
+  padding: 0 2rem;
+  position: relative;
+//   border: 2px solid red;
+  height: 20.7rem;
+
+  .top {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .header {
+      font-family: "Arimo", sans-serif;
+      width: 50%;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      color: #1a1a1a;
+      font-weight: lighter;
+      letter-spacing: 0.2rem;
+      margin-bottom: 1rem;
+      .beltLogo {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: rgb(198, 0, 0);
+        border-radius: 50%;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+    .desc {
+      font-size: 0.9rem;
+      font-family: "Arimo", sans-serif;
+      font-weight: 600;
+      width: 25rem;
+      line-height: 1.5;
+    }
+
+    .middle {
+      .card {
+        position: absolute;
+        background: #050505;
+        color: rgb(245, 245, 245);
+        width: 20rem;
+        // height: 22rem;
+        top: -7rem;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 1.5rem;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 2.5rem 0.5rem 0.7rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .film {
+          font-family: "Arimo", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 0.23rem;
+          font-weight: lighter;
+          color: #dadada;
+        }
+        h2 {
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: lighter;
+          margin: 0.2rem 0 1.5rem 0;
+          font-size: 2.5rem;
+        }
+
+        .sCards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          text-transform: uppercase;
+
+          .sCard1 {
+            width: 8.3rem;
+            height: 8.8rem;
+            border: 2px solid blue;
+            border-radius: 0.5rem;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: lighter;
+            font-size: 0.8rem;
+            letter-spacing: 0.2rem;
+            background: url("src/assets/map.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            mix-blend-mode: luminosity;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+          }
+          .sCard2 {
+            width: 8.3rem;
+            height: 8.8rem;
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #1d1d1d;
+
+            i {
+              color: #a31828;
+              font-size: 1.5rem;
+            }
+
+            p {
+              text-align: center;
+
+              &:nth-child(2) {
+                font-size: 0.95rem;
+                letter-spacing: 0.15rem;
+                font-weight: 100;
+              }
+              &:nth-child(3) {
+                font-size: 1.15rem;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+              }
+            }
+          }
+          .sCard3 {
+            width: 8.3rem;
+            height: 6rem;
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #1d1d1d;
+
+            p {
+              text-align: center;
+
+              &:nth-child(1) {
+                font-size: 0.95rem;
+                letter-spacing: 0.15rem;
+                font-weight: 100;
+              }
+              &:nth-child(2) {
+                font-size: 1.15rem;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+              }
+            }
+          }
+          .sCard4 {
+            width: 8.3rem;
+            height: 6rem;
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #1d1d1d;
+
+            p {
+              text-align: center;
+
+              &:nth-child(1) {
+                font-size: 0.95rem;
+                letter-spacing: 0.15rem;
+                font-weight: 100;
+              }
+              &:nth-child(2) {
+                font-size: 1.15rem;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+
+                span {
+                    font-size: 0.6rem;
+                }
+              }
+            }
+          }
+        }
+
+        .book {
+          display: flex;
+          align-items: center;
+          margin-top: 0.7rem;
+          width: 90%;
+          padding: 0.7rem;
+          border-radius: 1.2rem;
+          font-family: "Arimo", sans-serif;
+          justify-content: space-between;
+          background: rgb(210, 10, 10);
+          transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          font-size: 0.8rem;
+
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+  }
+
+  .deadpoolLovePose {
+    width: 24vw;
+    position: absolute;
+    bottom: -19rem;
+    left: 60%;
+    transform: translate(-50%, -50%);
   }
 }
