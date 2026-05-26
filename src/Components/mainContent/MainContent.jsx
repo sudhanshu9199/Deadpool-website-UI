@@ -369,3 +369,5 @@ const MainContent = () => {
 };
 
 export default MainContent;
+
+// inspiration video: https://youtu.be/jRkKC89fIj0
